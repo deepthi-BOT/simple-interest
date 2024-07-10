@@ -1,0 +1,47 @@
+body {
+    background: linear-gradient(to bottom, #b3e0ff, #99ccff);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+    color: rgba(0, 153, 255, 0.859);
+}
+u {
+    
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 153, 255, 0.859);
+}
+.calculator-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#output {
+    margin-top: 20px;
+    font-weight: bold;
+}

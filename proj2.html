@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="prj2.css">
+</head>
+<body>
+    <div class="calculator-card">
+        <h2 ><u>Interest Calculator</u></h2>
+        <p>A = P(1 + rt)</p>
+        <input type="number" id="principal" placeholder="Enter Principal ($)">
+        <input type="number" id="rate" placeholder="Enter Rate of Interest (%)">
+        <input type="number" id="years" placeholder="Enter Years (Y)">
+        <button onclick="calculateInterest()">Calculate</button>
+        <div id="output"></div>
+    </div>
+
+    <script>
+        function calculateInterest() {
+            const principal = parseFloat(document.getElementById('principal').value);
+            const rate = parseFloat(document.getElementById('rate').value);
+            const years = parseFloat(document.getElementById('years').value)*12;
+             // Assuming monthly compounding
+
+            const amount = principal;
+            const interest = principal*rate*years/100;
+
+            document.getElementById('output').innerText = Total interest: $${interest.toFixed(2)}\nTotal deposit: $${principal.toFixed(2)} + ${interest.toFixed(2)} = ${amount.toFixed(2)};
+        }
+    </script>
+</body>
+</html>
